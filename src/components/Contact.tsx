@@ -1,4 +1,9 @@
 import { Mail, FileText } from "lucide-react";
+const copyEmail = async () => {
+  await navigator.clipboard.writeText("dushyantkumar96756@gmail.com");
+
+  alert("Email copied!");
+};
 
 const Contact = () => {
   return (
@@ -11,13 +16,13 @@ const Contact = () => {
         </p>
 
         <div className="grid gap-4 sm:grid-cols-2">
-          <a
-            href="mailto:dushyantkumar96756@gmail.com"
+          <button
+            onClick={copyEmail}
             className="flex items-center gap-3 rounded-xl border border-slate-700 p-4"
           >
             <Mail size={20} />
-            Email
-          </a>
+            Copy Email
+          </button>
 
           <a
             href="https://github.com/dushyantkumar4"
