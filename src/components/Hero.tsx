@@ -2,19 +2,19 @@ import { Mail } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="mx-auto max-w-7xl px-6 py-24">
+    <section className="mx-auto max-w-7xl px-6 py-14">
       <div className="space-y-6">
         <span className="rounded-full border border-indigo-500 px-4 py-2 text-indigo-400">
           Full Stack Developer
         </span>
 
-        <h1 className="text-5xl font-bold md:text-7xl">
+        <h1 className="text-5xl font-bold md:text-7xl mt-1">
           Dushyant Kumar
         </h1>
 
         <p className="max-w-2xl text-lg text-slate-400">
           Building scalable web applications with React,
-          TypeScript, Node.js, MongoDb and modern tools.
+          TypeScript, Node.js, Express.js MongoDb and modern tools.
         </p>
 
         <div className="flex gap-4">
