@@ -2,15 +2,6 @@
 
 export const projects = [
   {
-    title: "JSON Formatter & Validator",
-    description:
-      "Formats, validates and beautifies JSON instantly. Built for the Digital Heroes assignment.",
-    tech: ["React", "TypeScript", "Tailwind"],
-    github: "https://github.com/dushyantkumar4/json-formatter-",
-    live: "https://json-formatter-iota-two.vercel.app/",
-  },
-
-  {
     title: "Decent Expense",
     description:
       "Finance tracking application with analytics dashboards and charts.",
