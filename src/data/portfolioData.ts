@@ -24,7 +24,7 @@ export const projects = [
     description:
       "Airbnb-style property booking platform with reviews and listings.",
     tech: ["Node", "Express", "MongoDB"],
-    github: "https://github.com/dushyantkumar4/majorProject",
+    github: "https://github.com/dushyantkumar4",
     live: "https://majorproject-fvii.onrender.com/listings",
   },
 ];
