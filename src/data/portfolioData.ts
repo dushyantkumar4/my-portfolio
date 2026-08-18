@@ -50,3 +50,4 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062423/s9zowolpvysfkmnuywrt.png",
   },
 ];
+
