@@ -1,79 +1,69 @@
-import { Mail, FileText, Check } from "lucide-react";
+import { Check, FileText, Mail } from "lucide-react";
 import { useState } from "react";
+import {Link} from "react-router-dom"
 
-const Contact = () => {
+const email = "dushyantkumar96756@gmail.com";
+const linkClass =
+  "flex items-center gap-3 rounded-xl border border-slate-200 p-4 text-left text-sm font-medium transition-colors duration-200 hover:border-indigo-500 dark:border-slate-700 dark:hover:border-indigo-400";
+
+export default function Contact() {
   const [copied, setCopied] = useState(false);
-
   const copyEmail = async () => {
-    try {
-      await navigator.clipboard.writeText("dushyantkumar96756@gmail.com");
-      setCopied(true);
-      // Reset back to normal after 2 seconds
-      setTimeout(() => setCopied(false), 1000);
-    } catch (err) {
-      console.error("Failed to copy:", err);
-    }
+    await navigator.clipboard.writeText(email);
+    setCopied(true);
+    window.setTimeout(() => setCopied(false), 1600);
   };
-
   return (
-    <section className="mx-auto max-w-7xl px-6 py-10">
-      <h2 className="mb-8 text-3xl font-bold">Contact</h2>
-
-      <div className="rounded-2xl border border-slate-800 bg-slate-900 p-8">
-        <p className="mb-8 text-slate-400">
-          Open to full-stack development opportunities and collaborations.
+    <section className="mx-auto max-w-7xl px-6 py-16">
+      <div className="mb-10">
+        <p className="text-sm font-medium text-indigo-600 dark:text-indigo-300">
+          Get in touch
         </p>
-
-        <div className="grid gap-4 sm:grid-cols-2">
-          <button
-            onClick={copyEmail}
-            className={`flex items-center gap-3 rounded-xl border p-4 transition-all duration-200 cursor-pointer ${
-              copied
-                ? "border-emerald-500 bg-emerald-500/10 text-emerald-400"
-                : "border-slate-700 hover:border-indigo-500 text-slate-200 hover:text-white"
-            }`}
-          >
+        <h2 className="mt-2 text-3xl font-bold sm:text-4xl">
+          Let’s build something useful.
+        </h2>
+      </div>
+      <div className="contact-liquid relative w-full overflow-hidden rounded-3xl border border-slate-200 bg-white/60 p-6 shadow-sm backdrop-blur sm:p-8 dark:border-slate-800 dark:bg-slate-900/65">
+        <div className="relative">
+        <p className="leading-7 text-slate-600 dark:text-slate-400">
+          Open to full-stack opportunities and thoughtful collaborations.
+        </p>
+        <div className="mt-7 grid gap-3 sm:grid-cols-2">
+          <button onClick={copyEmail} className={linkClass}>
             {copied ? (
-              <Check size={20} className="text-emerald-400" />
+              <Check className="text-emerald-500" size={18} />
             ) : (
-              <Mail size={20} />
-            )}
-            <span>{copied ? "Copied!" : "Copy Email"}</span>
+              <Mail size={18} />
+            )}{" "}
+            {copied ? "Email copied" : "Copy email"}
           </button>
-
-          <a
-            href="https://github.com/dushyantkumar4"
+          <Link
+            to="https://github.com/dushyantkumar4"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-slate-700 p-4 transition hover:border-indigo-500"
+            className={linkClass}
           >
-            <i className="fa-brands fa-github text-2xl"></i>
-            GitHub
-          </a>
-
-          <a
-            href="https://linkedin.com/in/dushyantkumar04"
+            <i className="fa-brands fa-github text-lg" /> GitHub
+          </Link>
+          <Link
+            to="https://linkedin.com/in/dushyantkumar04"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-slate-700 p-4 transition hover:border-indigo-500"
+            className={linkClass}
           >
-            <i className="fa-brands fa-square-linkedin text-2xl"></i>
-            LinkedIn
-          </a>
-
-          <a
-            href="https://drive.google.com/file/d/1_u7oKJii8PRZR1Kz906P6KwIfxrVRKnv/view?usp=sharing"
+            <i className="fa-brands fa-linkedin-in text-lg" /> LinkedIn
+          </Link>
+          <Link
+            to="https://drive.google.com/file/d/1EGz3nV3H0lVBYo1pWPJTv_BWYxCbu-Pm/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
-            className="flex items-center gap-3 rounded-xl border border-slate-700 p-4 transition hover:border-indigo-500"
+            className={linkClass}
           >
-            <FileText size={20} />
-            Resume
-          </a>
+            <FileText size={18} /> Resume
+          </Link>
+        </div>
         </div>
       </div>
     </section>
   );
-};
-
-export default Contact;
+}
