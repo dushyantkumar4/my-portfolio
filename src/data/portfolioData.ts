@@ -10,16 +10,6 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    title: "Decent Expense",
-    description:
-      "Finance tracking application with analytics dashboards and charts.",
-    tech: ["MERN", "TypeScript"],
-    github: "https://github.com/dushyantkumar4/financeFront",
-    live: "https://finance-front-xi.vercel.app/",
-    image:
-      "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062438/nuzew6yep0ujetld86uk.png",
-  },
-  {
     title: "Decent AI",
     description:
       "AI-powered application using Groq API with markdown rendering support.",
@@ -30,7 +20,17 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062294/zyhjxd57gu3crgrcbjjq.png",
   },
   {
-    title: "Decent Stay",
+    title: "Decent Expense",
+    description:
+      "Finance tracking application with analytics dashboards and charts.",
+    tech: ["MERN", "TypeScript"],
+    github: "https://github.com/dushyantkumar4/financeFront",
+    live: "https://finance-front-xi.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062438/nuzew6yep0ujetld86uk.png",
+  },
+  {
+    title: "Wanderlust",
     description:
       "Airbnb-style property booking platform with reviews and listings.",
     tech: ["Node", "Express", "MongoDB"],
@@ -50,4 +50,3 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062423/s9zowolpvysfkmnuywrt.png",
   },
 ];
-
