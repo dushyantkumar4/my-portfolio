@@ -40,6 +40,16 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062272/lkr8p4xgjafjf62oswyt.png",
   },
   {
+    title: "Decent Food",
+    description:
+      "Swiggy-style food ordering web app with API integration, cart management, responsive UI, and comprehensive testing.",
+    tech: ["React", "Tailwind CSS", "Redux Toolkit", "Cloudinary", "Vitest"],
+    github: "https://github.com/dushyantkumar4/DecentFood",
+    live: "https://swigy-beryl.vercel.app/",
+    image:
+      "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1788253000/lvgazundd0t7kghrq4iu.png",
+  },
+  {
     title: "FloraVision",
     description:
       "A fully responsive, visually stunning plant identification dashboard ",
