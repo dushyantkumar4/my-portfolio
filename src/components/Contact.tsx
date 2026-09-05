@@ -54,7 +54,7 @@ export default function Contact() {
             <i className="fa-brands fa-linkedin-in text-lg" /> LinkedIn
           </Link>
           <Link
-            to="https://drive.google.com/file/d/1EGz3nV3H0lVBYo1pWPJTv_BWYxCbu-Pm/view?usp=sharing"
+            to="https://drive.google.com/file/d/1_-Z9OlmjZnKJbOpkPpN_m7IbAtKUW6Wc/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className={linkClass}
