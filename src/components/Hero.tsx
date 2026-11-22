@@ -2,6 +2,7 @@ import { ArrowRight, Check, Mail } from "lucide-react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { Meteors } from "./ui/meteors"; 
 
 import avatar from "../assets/my-avatar.png";
 
@@ -122,6 +123,7 @@ export default function Hero() {
           />
         </div>
       </motion.div>
+      <Meteors number={20} />
     </section>
   );
 }
