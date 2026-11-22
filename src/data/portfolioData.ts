@@ -30,16 +30,6 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062438/nuzew6yep0ujetld86uk.png",
   },
   {
-    title: "Wanderlust",
-    description:
-      "Airbnb-style property booking platform with reviews and listings.",
-    tech: ["Node", "Express", "MongoDB"],
-    github: "https://github.com/dushyantkumar4",
-    live: "https://majorproject-fvii.onrender.com/listings",
-    image:
-      "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062272/lkr8p4xgjafjf62oswyt.png",
-  },
-  {
     title: "Decent Food",
     description:
       "Swiggy-style food ordering web app with API integration, cart management, responsive UI, and comprehensive testing.",
@@ -50,13 +40,13 @@ export const projects: Project[] = [
       "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1788253000/lvgazundd0t7kghrq4iu.png",
   },
   {
-    title: "FloraVision",
+    title: "Wanderlust",
     description:
-      "A fully responsive, visually stunning plant identification dashboard ",
-    tech: ["React", "Tailwind", "TypeScript"],
-    github: "https://github.com/dushyantkumar4/FloraVision",
-    live: "https://flora-vision-23kd.vercel.app/",
+      "Airbnb-style property booking platform with reviews and listings.",
+    tech: ["Node", "Express", "MongoDB"],
+    github: "https://github.com/dushyantkumar4",
+    live: "https://majorproject-fvii.onrender.com/listings",
     image:
-      "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062423/s9zowolpvysfkmnuywrt.png",
+      "https://res.cloudinary.com/dq0mvuuhd/image/upload/v1787062272/lkr8p4xgjafjf62oswyt.png",
   },
 ];
